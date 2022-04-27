@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
         Button addTask = findViewById(R.id.button4);
         addTask.setOnClickListener(view -> {
-            Intent addTaskActivity = new Intent(getApplicationContext() , addTask.class);
+            Intent addTaskActivity = new Intent(this , addTask.class);
             startActivity(addTaskActivity);
         });
 
         Button allTask = findViewById(R.id.button5);
         allTask.setOnClickListener(view -> {
-            Intent allTaskActivity = new Intent(getApplicationContext() , allTasks.class);
+            Intent allTaskActivity = new Intent(this , allTasks.class);
             startActivity(allTaskActivity);
         });
     }
