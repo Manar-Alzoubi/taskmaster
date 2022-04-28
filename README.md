@@ -8,3 +8,20 @@
       
     * all tasks page (contains title, image and back button)
       ![all tasks page](screenShots/all.jpg)
+      
+------------------------------------------------------------
+
+# Lab 27 
+
+![home updated ](screenShots/home.png)
+
+
+![settings on home](screenShots/sett.png)
+
+
+![settings](screenShots/settings.png)
+
+![all tasks page](screenShots/all.jpg)
+
+
+![task details](screenShots/read.png)
