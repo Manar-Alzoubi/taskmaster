@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/body"
+        android:textColor="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        android:text="@string/assigned"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
