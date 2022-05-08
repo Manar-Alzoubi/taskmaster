@@ -21,7 +21,6 @@
 
 ![settings](screenShots/settings.png)
 
-![all tasks page](screenShots/all.jpg)
 
 
 ![task details](screenShots/read.png)
