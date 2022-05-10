@@ -14,8 +14,10 @@ public class taskDetails extends AppCompatActivity {
         setContentView(R.layout.activity_task_details);
         TextView textTitle = findViewById(R.id.title);
 
+        // Get Intent
         Intent passedIntent = getIntent();
 
+        // get the data
         String titleRecived = passedIntent.getStringExtra("title");
         String bodyRecived = passedIntent.getStringExtra("body");
         String stateRecived = passedIntent.getStringExtra("state");
