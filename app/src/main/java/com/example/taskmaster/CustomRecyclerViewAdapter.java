@@ -55,5 +55,6 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomRecycl
             body = itemView.findViewById(R.id.body);
             state = itemView.findViewById(R.id.state);
         }
+
     }
 }
