@@ -14,4 +14,11 @@
     <string name="description">description</string>
     <string name="assigned">assigned</string>
 
+    <string-array name="states">
+        <item>new</item>
+        <item>assigned</item>
+        <item>in progress</item>
+        <item>Complete</item>
+    </string-array>
+
 </resources>

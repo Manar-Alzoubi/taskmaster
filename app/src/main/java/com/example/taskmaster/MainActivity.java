@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,26 +29,25 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Button addTaskBtn = findViewById(R.id.addTask);
+        addTaskBtn.setOnClickListener(view -> {
+            startActivity(new Intent(getApplicationContext() ,addTask.class));
+        });
         initialiseData();
+        List<Task> task = AppDatabase.getInstance(this).taskDao().getAll();
 
         // get the recycler view object
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
 
         // create an adapter
         CustomRecyclerViewAdapter customRecyclerViewAdapter = new CustomRecyclerViewAdapter(taskList);
-//        CustomRecyclerViewAdapter customRecyclerViewAdapter = new CustomRecyclerViewAdapter(
-//                taskList, position -> {
-//            Toast.makeText(
-//                    MainActivity.this,
-//                    "The task clicked => " + taskList.get(position).getTitle(), Toast.LENGTH_SHORT).show();
-//
-//            Intent intent = new Intent(getApplicationContext(), taskDetails.class);
-//            Intent title = intent.putExtra("title", taskList.get(position).getTitle());
-//            intent.putExtra("body",taskList.get(position).getBody());
-//            intent.putExtra("state",taskList.get(position).getState());
-//
-//            startActivity(intent);
+//        CustomRecyclerViewAdapter customRecyclerViewAdapter = new CustomRecyclerViewAdapter(task, new CustomRecyclerViewAdapter.CustomClickListener() {
+//            @Override
+//            public void onTaskItemClicked(int position) {
+//                Intent taskDetailActivity = new Intent(getApplicationContext() , taskDetails.class);
+//                taskDetailActivity.putExtra("id" ,  task.get(position).getId().toString());
+//                startActivity(taskDetailActivity);
+//            }
 //        });
 
         // set adapter on recycler view
