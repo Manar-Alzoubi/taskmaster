@@ -1,6 +1,12 @@
 package com.example.taskmaster;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Task {
+    @PrimaryKey(autoGenerate = true)
+    public int id;
     private String title;
     private String body;
     private String state;
@@ -41,6 +47,10 @@ public class Task {
 
     public String getState() {
         return state;
+    }
+
+    public int getId() {
+        return id;
     }
 
     @Override
