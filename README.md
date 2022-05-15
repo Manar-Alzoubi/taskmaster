@@ -7,6 +7,7 @@
 ![main activity page](screenShots/main.png)
 
 
+
       
 
 * add Task page (contains title, and some data to write: task title and description, button to submit and  text: total tasks)
@@ -18,25 +19,20 @@
 
 
       
-* all tasks page (containsvimage and back button)
+* all tasks page (contains image and back button)
       
 
 
 ![all tasks page](screenShots/all.png)
-=======
 
 
-      
-------------------------------------------------------------
+-----------------------------------------------------
+# Lab 27
 
-<!-- # Lab 27 
+* settings button added 
+* username appears on the main page
 
-![home updated ](screenShots/home.png)
-
-
-
-
-![settings on home](screenShots/sett.png)
+![main activity page](screenShots/home.png)
 
 
 
@@ -50,23 +46,4 @@
 
 
 -------------------------------------------------------
-# Lab 28  
-
-
-![recyclerview](screenShots/recyclerview.png)
-
-
-
------------------------------------------------
-
-# Lab 29
-
-![Room](screenShots/homenew.png)
-
-
-
-
-
-
-![Room](screenShots/addtask.png) -->
 
