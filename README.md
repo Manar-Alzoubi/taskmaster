@@ -7,7 +7,9 @@
 ![main activity page](screenShots/main.png)
 
 
+
       
+
 * add Task page (contains title, and some data to write: task title and description, button to submit and  text: total tasks)
      
      
@@ -32,4 +34,16 @@
 
 ![main activity page](screenShots/home.png)
 
+
+
+
+![settings](screenShots/settings.png)
+
+
+
+
+![task details](screenShots/read.png)
+
+
+-------------------------------------------------------
 

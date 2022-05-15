@@ -1,3 +1,4 @@
+
 package com.example.taskmaster;
 
 import androidx.annotation.NonNull;
@@ -13,15 +14,19 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+
     private TextView username;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         username = findViewById(R.id.editUserName);
 
         Button settBtn = findViewById(R.id.button8);
@@ -30,16 +35,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button addTask = findViewById(R.id.button6);
+
         addTask.setOnClickListener(view -> {
             Intent addTaskActivity = new Intent(this , addTask.class);
             startActivity(addTaskActivity);
         });
 
         Button allTask = findViewById(R.id.button7);
+
         allTask.setOnClickListener(view -> {
             Intent allTaskActivity = new Intent(this , allTasks.class);
             startActivity(allTaskActivity);
         });
+
 
         Button pray = findViewById(R.id.button4);
         pray.setOnClickListener(view -> {
@@ -84,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    }
+
+
 
     @Override
     protected void onStart() {
@@ -100,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         Log.i(TAG, "onResume: called - The App is VISIBLE");
+
                 setUserName();
         super.onResume();
 
@@ -122,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy: called");
         super.onDestroy();
     }
+
 
     private void setUserName() {
         // get text out of shared preference

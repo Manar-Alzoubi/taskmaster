@@ -1,3 +1,4 @@
+
 package com.example.taskmaster;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,4 +18,5 @@ public class addTask extends AppCompatActivity {
             Toast.makeText(this, "Submitted", Toast.LENGTH_SHORT).show();
         });
     }
+
 }
