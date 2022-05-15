@@ -1,24 +1,14 @@
+
 <resources>
     <string name="app_name">taskmaster</string>
-    <string name="add_Task">ADD TASK</string>
-    <string name="all_tasks">ALL TASKS</string>
+<!--    <string name="add_Task">ADD TASK</string>-->
+<!--    <string name="all_tasks">ALL TASKS</string>-->
     <string name="image">imageback</string>
     <string name="task_title">Task Title</string>
     <string name="my_task">My Task</string>
     <string name="do_something">Do Something</string>
     <string name="add_task">Add Task</string>
     <string name="total_tasks">Total Tasks</string>
-    <string name="task_titleOnDetaile">       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
-</string>
-    <string name="task">task</string>
-    <string name="description">description</string>
-    <string name="assigned">assigned</string>
 
-    <string-array name="states">
-        <item>new</item>
-        <item>assigned</item>
-        <item>in progress</item>
-        <item>Complete</item>
-    </string-array>
 
 </resources>
