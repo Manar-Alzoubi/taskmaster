@@ -1,3 +1,4 @@
+
 package com.example.taskmaster;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -67,4 +68,5 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy: called");
         super.onDestroy();
     }
+
 }
